@@ -131,7 +131,7 @@ body {
 /* Párrafo al lado del carrusel */
 .text-container {
     width: 45%;
-    margin: auto; /* Para centrar horizontalmente si lo necesitás */
+    margin: auto; 
 }
 
 .text-container h2 {
@@ -168,7 +168,7 @@ body {
 /* Contenedor de tarjetas */
 .tarjetas-contenedor {
     display: flex;
-    flex-wrap: wrap; /* Hace que las tarjetas se acomoden en varias filas */
+    flex-wrap: wrap; 
     justify-content: space-evenly; /* Espaciado entre tarjetas */
     gap: 20px; /* Espacio entre las tarjetas */
     margin-top: 20px;
@@ -231,7 +231,7 @@ body {
     align-items: center;
     gap: 40px;
     margin-top: 40px;
-    flex-wrap: wrap; /* por si el espacio es chico en pantallas pequeñas */
+    flex-wrap: wrap; 
 }
 
 .text-container {
