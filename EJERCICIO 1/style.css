@@ -60,11 +60,6 @@ header {
     flex: 1;
 }
 
-.dropdown {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
 
 /* Icono (patita) en el botón */
 header .icon {
@@ -167,10 +162,9 @@ body {
 
 /* Contenedor de tarjetas */
 .tarjetas-contenedor {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-evenly; /* Espaciado entre tarjetas */
-    gap: 20px; /* Espacio entre las tarjetas */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     margin-top: 20px;
 }
 
