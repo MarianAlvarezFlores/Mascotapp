@@ -11,17 +11,16 @@
 
 /* Header custom styles */
 header {
-    background-color: #F2F2F2; 
-    padding: 15px 0; 
-    margin-bottom: 20px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #F2F2F2;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Contenedor del header */
 .header-container {
     width: 100%;
     padding: 15px;
-    max-height: 50px;
 }
 
 .mi-header-inner {
@@ -39,17 +38,17 @@ header {
 }
 
 .titulo-header {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 50px;
     font-family: "congreso_perros", sans-serif;
     margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .logo-img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
 
 .mi-header h1 {
@@ -58,6 +57,51 @@ header {
     font-size: 50px;
     text-align: center;
     flex: 1;
+}
+
+/* Header para celular (menor a 768px) */
+@media (max-width: 767px) {
+    .mi-header-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .titulo-header,
+    .mi-header h1 {
+        display: none;
+    }
+
+    .logo-img {
+        height: 180px;
+        width: 180px;
+        margin-bottom: -25px;
+        margin-top: -35px;
+    }
+
+    .logo-contenedor {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Header para tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .titulo-header,
+    .mi-header h1 {
+        font-size: 40px;
+    }
+
+    .logo-img {
+        height: 130px;
+        width: 130px;
+    }
+
+    .logo-contenedor {
+        gap: 15px;
+    }
 }
 
 /* Icono (patita) en el botón */
@@ -135,6 +179,49 @@ body {
 
 .text-container p {
     text-align: justify;
+}
+
+/* Párrafo al lado del carrusel adaptado a celular y a tablet*/
+
+/* Celulares */
+@media (max-width: 767px) {
+    .text-container {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .text-container h2 {
+        font-size: 22px;
+    }
+
+    .text-container p {
+        font-size: 16px;
+    }
+
+    .carousel-inner img {
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+}
+
+/* tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .text-container {
+        width: 80%;
+        padding: 0 20px;
+    }
+
+    .text-container h2 {
+        font-size: 24px;
+    }
+
+    .text-container p {
+        font-size: 17px;
+    }
+
+    .carousel-inner img {
+        margin-top: 30px;
+    }
 }
 
 .lista-requisitos {
@@ -216,6 +303,15 @@ body {
 .boton-adopcion:hover {
     background-color: #BF500F;
     transform: scale(1.05);
+}
+
+.boton-adopcion,
+.boton-adopcion:visited,
+.boton-adopcion:focus,
+.boton-adopcion:active {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
 }
 
 .requisitos-container {
