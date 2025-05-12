@@ -14,21 +14,18 @@
     <title>Contacto</title>
 </head>
 <body>
-        <div class="container">
-        
-    <!-- Header -->
-    <header class="mi-header">
-        <div class="mi-header-inner">
-            <!-- Logo + Título -->
-            <div class="logo-contenedor">
-                <a href="../index.html">
-                    <img src="../media/logo_fondo.jpg" alt="Logo Mascotapp" class="logo-img">
-                </a>
-        <!-- Título centrado -->
-        <h1 class="titulo-header">Contacto</h1>
-            </div>
+    <div class="container">
+        <!-- Header -->
+        <header class="mi-header">
+            <div class="mi-header-inner">
+                <!-- Logo + Título -->
+                <div class="logo-contenedor">
+                    <a href="../index.html">
+                        <img src="../media/logo_fondo.jpg" alt="Logo Mascotapp" class="logo-img">
+                    </a>
+                    <h1 class="titulo-header">Contacto</h1>
+                </div>
 
-    
                 <!-- Botón Secciones -->
                 <nav>
                     <div class="dropdown">
@@ -62,16 +59,43 @@
                     <label for="mensaje">Mensaje:</label><br>
                     <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
                 
-                    <button type="submit">Enviar</button>
+                    <button type="submit" class="btn btn-primary" onclick="mostrarNotificacion(event)">Enviar</button>
                 </form>
             </section>
         </main>
-            <!-- Footer-->
-            <footer class="mi-footer">
-                <div class="mi-footer-inner">
-                    <small>© 2025 Todas las patitas reservadas</small>
-                    <img src="../media/patitas.png" alt="huellitas" class="icon-footer">
+
+        <!-- Toast Notificación -->
+        <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 100px;">
+            <div id="toastContainer" style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">
+                <div class="toast" data-delay="3000">
+                    <div class="toast-header">
+                        <img src="../media/patita.png" class="rounded mr-2" alt="Logo" style="width: 20px; height: 20px;">
+                        <strong class="mr-auto">Mascotapp</strong>
+                        <small>ahora</small>
+                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+                    </div>
+                    <div class="toast-body">
+                        ¡Mensaje enviado correctamente!
+                    </div>
                 </div>
-            </footer>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        <footer class="mi-footer">
+            <div class="mi-footer-inner">
+                <small>© 2025 Todas las patitas reservadas</small>
+                <img src="../media/patitas.png" alt="huellitas" class="icon-footer">
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script para mostrar notificación -->
+    <script>
+        function mostrarNotificacion(event) {
+            event.preventDefault();
+            $('.toast').toast('show');
+        }
+    </script>
 </body>
 </html>
