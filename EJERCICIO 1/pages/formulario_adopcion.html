@@ -12,6 +12,21 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../media/patita.png">
     <title>Formulario de Adopción</title>
 </head>
+<div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 100px;">
+    <div id="toastContainer" style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">
+        <div class="toast" data-delay="3000">
+            <div class="toast-header">
+                <img src="../media/patita.png" class="rounded mr-2" alt="Logo" style="width: 20px; height: 20px;">
+                <strong class="mr-auto">Mascotapp</strong>
+                <small>ahora</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            </div>
+            <div class="toast-body">
+                ¡Tu solicitud fue enviada con éxito!
+            </div>
+        </div>
+    </div>
+</div>
 <body>
     <div class="container">
         <!-- Header -->
@@ -64,6 +79,13 @@
     
                 <button type="submit">Enviar Solicitud</button>
             </form>
+            <!--Simulo notificación al enviar fomulario-->
+        <script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    $('.toast').toast('show');
+});
+</script>
         </section>
     </main>
         
