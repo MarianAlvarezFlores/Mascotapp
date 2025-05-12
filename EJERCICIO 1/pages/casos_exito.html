@@ -14,6 +14,25 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="../media/patita.png">
 </head>
+<!-- script js para mostrar mensajes animados de testimonios -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const testimonios = document.querySelectorAll(".chat-testimonio");
+        testimonios.forEach(t => t.style.display = "none");
+        let i = 0;
+        function mostrarSiguiente() {
+            if (i < testimonios.length) {
+                testimonios[i].style.display = "block";
+                testimonios[i].style.opacity = 0;
+                testimonios[i].style.animation = "aparecer 0.8s forwards";
+                i++;
+                setTimeout(mostrarSiguiente, 1500); // tiempo entre cada testimonio
+            }
+        }
+
+        mostrarSiguiente();
+    });
+</script>
 <body>
     <div class="container">
     <!-- Header -->
@@ -27,8 +46,6 @@
         <!-- Título centrado -->
         <h1 class="titulo-header">Testimonios</h1>
             </div>
-
-        
                     <!-- Botón Secciones -->
                 <nav>
                     <div class="dropdown">
@@ -51,15 +68,15 @@
             <div class="container">
                 <section class="testimonios-chat">
                     <h2>Adoptantes felices 🐶</h2>
-                    <div class="chat-testimonio izquierda">
-                        <p><strong>Sofía:</strong> Adoptamos a Lolo hace un año y no podemos imaginar la vida sin él 💕</p>
-                    </div>
-                    <div class="chat-testimonio derecha">
-                        <p><strong>Martín:</strong> La entrevista fue súper amena, y el seguimiento nos hizo sentir acompañados.</p>
-                    </div>
-                    <div class="chat-testimonio izquierda">
-                        <p><strong>Lucía:</strong> ¡Gracias por ayudarnos a encontrar a la compañera perfecta para nuestros hijos!</p>
-                    </div>
+                <div class="chat-testimonio izquierda" style="display: none;">
+                    <p><strong>Sofía:</strong> Adoptamos a Lolo hace un año y no podemos imaginar la vida sin él 💕</p>
+                </div>
+                <div class="chat-testimonio derecha" style="display: none;">
+                    <p><strong>Martín:</strong> La entrevista fue súper amena y el seguimiento nos hizo sentir acompañados.</p>
+                </div>
+                <div class="chat-testimonio izquierda" style="display: none;">
+                    <p><strong>Lucía:</strong> ¡Gracias por ayudarnos a encontrar a la compañera perfecta para nuestros hijos!</p>
+                </div>
                 </section>
             </div>
         </main>
