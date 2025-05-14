@@ -59,51 +59,6 @@ header {
     flex: 1;
 }
 
-/* Header para celular (menor a 768px) */
-@media (max-width: 767px) {
-    .mi-header-inner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .titulo-header,
-    .mi-header h1 {
-        display: none;
-    }
-
-    .logo-img {
-        height: 180px;
-        width: 180px;
-        margin-bottom: -25px;
-        margin-top: -35px;
-    }
-
-    .logo-contenedor {
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-/* Header para tablets */
-@media (max-width: 1024px) and (min-width: 768px) {
-    .titulo-header,
-    .mi-header h1 {
-        font-size: 40px;
-    }
-
-    .logo-img {
-        height: 130px;
-        width: 130px;
-    }
-
-    .logo-contenedor {
-        gap: 15px;
-    }
-}
-
 /* Icono (patita) en el botón */
 header .icon {
     height: 40px;
@@ -179,49 +134,6 @@ body {
 
 .text-container p {
     text-align: justify;
-}
-
-/* Párrafo al lado del carrusel adaptado a celular y a tablet*/
-
-/* Celulares */
-@media (max-width: 767px) {
-    .text-container {
-        width: 90%;
-        padding: 0 10px;
-    }
-
-    .text-container h2 {
-        font-size: 22px;
-    }
-
-    .text-container p {
-        font-size: 16px;
-    }
-
-    .carousel-inner img {
-        margin-top: 20px;
-        border-radius: 5px;
-    }
-}
-
-/* tablets */
-@media (max-width: 1024px) and (min-width: 768px) {
-    .text-container {
-        width: 80%;
-        padding: 0 20px;
-    }
-
-    .text-container h2 {
-        font-size: 24px;
-    }
-
-    .text-container p {
-        font-size: 17px;
-    }
-
-    .carousel-inner img {
-        margin-top: 30px;
-    }
 }
 
 .lista-requisitos {
@@ -515,4 +427,125 @@ form button[type="submit"]:hover {
 
 .custom-toast .close:hover {
     opacity: 1;
+}
+
+/* Adaptaciones para celular*/
+@media (max-width: 767px) {
+    .mi-header-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .titulo-header,
+    .mi-header h1 {
+        display: none;
+    }
+
+    .logo-img {
+        height: 180px;
+        width: 180px;
+        margin-bottom: -25px;
+        margin-top: -35px;
+    }
+
+    .logo-contenedor {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Párrafo al lado del carrusel adaptado a celular*/
+
+    .text-container {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .text-container h2 {
+        font-size: 1.2em;
+    }
+
+    .text-container p {
+        font-size: 0.8em;
+    }
+
+    .carousel-inner img {
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+/* Adaptaciones celular tamaño S = 320PX*/
+
+@media (max-width: 320px) {
+
+    .text-container p{
+        margin-right: 10px;
+    }
+    .text-container h2 {
+        margin-right: 10px;
+    }
+
+    }
+
+    .logo-img {
+        height: 120px;
+        width: 120px;
+        margin-bottom: -25px;
+        margin-top: -35px;
+    }
+
+    /* Icono (patita) en el botón */
+header .icon {
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+}
+
+/* Contenedor - botón de Menu */
+header .dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Botón Secciones */
+header .btn-secciones {
+    background-color: #F2A03D;
+    color: #262626;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    border: none;
+    display: flex;
+    align-items: center;
+    z-index: 1; /* asegura que esté por encima */
+}
+    header .icon {
+        height: 20px;
+        width: 20px;
+        margin-left: 6px;
+    }
+
+/* Dropdown personalizado */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F2F2F2;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    width: max-content;  /* se adapta al contenido */
+    min-width: 120px;    /* o un valor fijo si querés */
+    text-align: center;
+}
+.dropdown-menu.show {
+    display: block;
 }
