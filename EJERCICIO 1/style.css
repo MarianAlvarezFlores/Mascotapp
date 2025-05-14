@@ -429,53 +429,9 @@ form button[type="submit"]:hover {
     opacity: 1;
 }
 
-/* Adaptaciones para celular
-@media (max-width: 767px) {
-    .mi-header-inner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 10px;
-    }
 
-    .titulo-header,
-    .mi-header h1 {
-        display: none;
-    }
 
-    .logo-img {
-        height: 180px;
-        width: 180px;
-        margin-bottom: -25px;
-        margin-top: -35px;
-    }
 
-    .logo-contenedor {
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-    }
-} */
-
-/* Párrafo al lado del carrusel adaptado a celular*/
-
-    .text-container {
-        width: 90%;
-        padding: 0 10px;
-    }
-
-    .text-container h2 {
-        font-size: 1.2em;
-    }
-
-    .text-container p {
-        font-size: 0.8em;
-    }
-
-    .carousel-inner img {
-        margin-top: 20px;
-        border-radius: 5px;
-    }
 
 /* Adaptaciones celular entre 375 y 767*/
 
@@ -490,6 +446,12 @@ form button[type="submit"]:hover {
 
     }
 
+/* Contenedor del header */
+.header-container {
+    width: 100%;
+    padding: 15px;
+    height: 150px;
+}
     .logo-img {
         height: 100px;
         width: 100px;
@@ -640,3 +602,82 @@ header .btn-secciones {
         font-size: 14px; /* Disminuye el tamaño de la fuente del botón */
     }
 
+    /* Estilos generales para el formulario */
+section {
+    padding: 30px;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estilos para los campos del formulario */
+form label {
+    font-size: 1.2em;
+    color: #262626;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #444;
+}
+
+/*Formulario*/
+
+section {
+        padding: 20px;  /* Reduce el padding para móviles medianos */
+        margin-top: 10px;  /* Ajusta el margen superior */
+    }
+
+form label {
+        font-size: 0.9em; /* Reduce ligeramente el tamaño del texto */
+    }
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+        padding: 10px; /* Reduce el padding de los campos */
+        font-size: 0.95em; /* Ajusta el tamaño de fuente para móviles medianos */
+    }
+
+/* Botón de enviar */
+form button[type="submit"] {
+    background-color: #F2A03D;
+    color: #fff;
+    font-size: 1em;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 29%;
+}
+
+/* Párrafo al lado del carrusel adaptado a celular*/
+
+    .text-container {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .text-container h2 {
+        font-size: 1.2em;
+    }
+
+    .text-container p {
+        font-size: 0.8em;
+    }
+
+    .carousel-inner img {
+        margin-top: 20px;
+        border-radius: 5px;
+    }
