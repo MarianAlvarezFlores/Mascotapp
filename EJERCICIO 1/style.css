@@ -424,14 +424,26 @@ form button[type="submit"]:hover {
     font-size: 1.5em;
     opacity: 0.7;
 }
-
 .custom-toast .close:hover {
     opacity: 1;
 }
 
-
-
-
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.custom-toast {
+    animation: popIn 0.4s ease-out;
+}
 
 /* Adaptaciones celular entre 375 y 767*/
 
