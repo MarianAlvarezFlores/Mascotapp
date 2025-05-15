@@ -603,16 +603,16 @@ header .btn-secciones {
     }
 
 .nombre-mascota {
-        font-size: 20px; /* Disminuye el tamaño de fuente */
+        font-size: 20px; 
     }
 
 .descripcion {
-        font-size: 14px; /* Disminuye el tamaño de la fuente */
+        font-size: 14px; 
     }
 
 .boton-adopcion {
-        padding: 8px 15px; /* Ajusta el tamaño del botón */
-        font-size: 14px; /* Disminuye el tamaño de la fuente del botón */
+        padding: 8px 15px; 
+        font-size: 14px; 
     }
 
 /* Estilos generales para el formulario de las mascotas para adoptar*/
