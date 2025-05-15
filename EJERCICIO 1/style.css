@@ -466,13 +466,6 @@ form button[type="submit"]:hover {
     padding: 15px;
     height: 150px;
 }
-.mi-header-inner-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    flex-wrap: wrap;
-}
 .logo-img {
         height: 100px;
         width: 100px;
