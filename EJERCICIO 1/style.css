@@ -428,6 +428,7 @@ form button[type="submit"]:hover {
     opacity: 1;
 }
 
+/*
 @keyframes popIn {
     0% {
         transform: scale(0.5);
@@ -443,7 +444,8 @@ form button[type="submit"]:hover {
 }
 .custom-toast {
     animation: popIn 0.4s ease-out;
-}
+}*/
+
 
 /* Adaptaciones celular entre 375 y 767*/
 
@@ -464,13 +466,20 @@ form button[type="submit"]:hover {
     padding: 15px;
     height: 150px;
 }
-    .logo-img {
+.mi-header-inner-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+.logo-img {
         height: 100px;
         width: 100px;
         margin-bottom: -25px;
         margin-top: -35px;
     }
-    .titulo-header,
+.titulo-header,
     .mi-header h1 {
         display: none;
     }
@@ -501,7 +510,7 @@ header .btn-secciones {
     border: none;
     display: flex;
     align-items: center;
-    z-index: 1; /* asegura que esté por encima */
+    z-index: 1; 
 }
     header .icon {
         height: 20px;
@@ -520,8 +529,8 @@ header .btn-secciones {
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: none;
-    width: max-content;  /* se adapta al contenido */
-    min-width: 120px;    /* o un valor fijo si querés */
+    width: max-content;  
+    min-width: 120px;    
     text-align: center;
 }
 .dropdown-menu.show {
@@ -534,7 +543,6 @@ header .btn-secciones {
         padding: 0 10px;   
         margin-right: 10px;           
     }
-
 
 .lista-requisitos li {
         padding: 8px 0 8px 28px;      
@@ -592,7 +600,7 @@ header .btn-secciones {
     }
 }
 
-    .card-propia {
+.card-propia {
         width: 80%; 
         max-width: 100%; 
         margin: 20px auto; 
@@ -601,20 +609,20 @@ header .btn-secciones {
         margin-right: 0;
     }
 
-    .nombre-mascota {
+.nombre-mascota {
         font-size: 20px; /* Disminuye el tamaño de fuente */
     }
 
-    .descripcion {
+.descripcion {
         font-size: 14px; /* Disminuye el tamaño de la fuente */
     }
 
-    .boton-adopcion {
+.boton-adopcion {
         padding: 8px 15px; /* Ajusta el tamaño del botón */
         font-size: 14px; /* Disminuye el tamaño de la fuente del botón */
     }
 
-    /* Estilos generales para el formulario */
+/* Estilos generales para el formulario de las mascotas para adoptar*/
 section {
     padding: 30px;
     background-color: #F9F9F9;
@@ -645,20 +653,19 @@ form textarea {
 /*Formulario*/
 
 section {
-        padding: 20px;  /* Reduce el padding para móviles medianos */
-        margin-top: 10px;  /* Ajusta el margen superior */
+        padding: 20px;  
+        margin-top: 10px;   
     }
-
-form label {
-        font-size: 0.9em; /* Reduce ligeramente el tamaño del texto */
+    form label {
+        font-size: 0.9em;
     }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-        padding: 10px; /* Reduce el padding de los campos */
-        font-size: 0.95em; /* Ajusta el tamaño de fuente para móviles medianos */
-    }
+        padding: 10px;
+        font-size: 0.95em; 
+}
 
 /* Botón de enviar */
 form button[type="submit"] {
@@ -671,8 +678,16 @@ form button[type="submit"] {
     margin-top: 0px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-left: 29%;
 }
+
+.boton-adopcion {
+        display: block;
+        width: 80%; /* Botón más grande y centrado */
+        margin: 10px auto; /* Centrado horizontal */
+        padding: 12px 0; /* Más alto para facilitar el clic táctil */
+        font-size: 16px; /* Tamaño de texto más grande para legibilidad */
+        text-align: center;
+    }
 
 /* Párrafo al lado del carrusel adaptado a celular*/
 
@@ -693,3 +708,21 @@ form button[type="submit"] {
         margin-top: 20px;
         border-radius: 5px;
     }
+
+    footer {
+        padding: 15px 10px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    footer small {
+        font-size: 13px; 
+        line-height: 1.4;
+    }
+
+    footer .icon-footer {
+        width: 30px;
+        height: 30px;
+        margin-top: 8px;
+    }
+
