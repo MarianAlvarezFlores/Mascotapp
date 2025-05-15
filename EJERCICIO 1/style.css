@@ -69,8 +69,8 @@ header .icon {
 /* Contenedor - botón de Secciones */
 header .dropdown {
     display: flex;
-    justify-content: flex-end; 
-    align-items: flex-start
+    justify-content: center; 
+    align-items: flex-start;
 }
 
 /* Botón Secciones */
@@ -83,7 +83,7 @@ header .btn-secciones {
     text-transform: uppercase;
     border: none;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 header .btn-secciones:hover {
@@ -215,6 +215,7 @@ body {
 .boton-adopcion:hover {
     background-color: #BF500F;
     transform: scale(1.05);
+    text-decoration: none;
 }
 
 .boton-adopcion,
@@ -260,7 +261,7 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center; /* intento de centrar el texto del footer */
+    text-align: center; 
     width: 100%;
 }
 
@@ -278,7 +279,7 @@ footer .icon-footer {
     width: 35px;
     height: 35px;
     object-fit: contain;
-    margin-top: 10px; /* Espacio entre el texto y la imagen */
+    margin-top: 10px; 
 }
 
 /* Subtítulos y párrafos */
@@ -428,7 +429,7 @@ form button[type="submit"]:hover {
     opacity: 1;
 }
 
-/*
+/* Animación toast*/
 @keyframes popIn {
     0% {
         transform: scale(0.5);
@@ -442,10 +443,6 @@ form button[type="submit"]:hover {
         transform: scale(1);
     }
 }
-.custom-toast {
-    animation: popIn 0.4s ease-out;
-}*/
-
 
 /* Adaptaciones celular entre 375 y 767*/
 
@@ -675,10 +672,10 @@ form button[type="submit"] {
 
 .boton-adopcion {
         display: block;
-        width: 80%; /* Botón más grande y centrado */
-        margin: 10px auto; /* Centrado horizontal */
-        padding: 12px 0; /* Más alto para facilitar el clic táctil */
-        font-size: 16px; /* Tamaño de texto más grande para legibilidad */
+        width: 80%; 
+        margin: 10px auto; 
+        padding: 12px 0; 
+        font-size: 16px;
         text-align: center;
     }
 
@@ -718,4 +715,3 @@ form button[type="submit"] {
         height: 30px;
         margin-top: 8px;
     }
-
