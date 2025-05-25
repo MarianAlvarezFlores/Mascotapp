@@ -1,0 +1,18 @@
+/* Fuentes */
+@font-face {
+    font-family: "congreso_perros";
+    src: url(./font/congreso_perros.ttf) ;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(./font/Montserrat-VariableFont_wght.ttf) ;
+}
+
+/* Adaptacion mobile*/
+
+@mixin mobile {
+    @media (min-width: 375px) and (max-width: 767px){
+        @content
+    }
+}
