@@ -9,6 +9,17 @@
     src: url(./font/Montserrat-VariableFont_wght.ttf) ;
 }
 
+/* Variables para body*/
+
+$body-margin-x: 20px;
+$body-font-family: "montserrat", serif;
+
+body {
+    margin-left: $body-margin-x;
+    margin-right: $body-margin-x;
+    font-family: $body-font-family;
+}
+
 /* Adaptacion mobile*/
 
 @mixin mobile {
@@ -16,3 +27,5 @@
         @content
     }
 }
+
+
