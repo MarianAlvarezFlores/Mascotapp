@@ -21,11 +21,11 @@
     }
 
     @include mobile {
-      &:active,
-      &:focus {
-          transform: scale(1.03);
-          box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
-      }
+        &:active,
+        &:focus {
+            transform: scale(1.03);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
     }
 
     .container-propia {
