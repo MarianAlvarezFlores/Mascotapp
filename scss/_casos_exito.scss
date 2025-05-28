@@ -1,0 +1,53 @@
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.testimonios-chat {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .chat-testimonio {
+        max-width: 80%;
+        margin: 10px;
+        padding: 15px 20px;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+        font-size: 16px;
+        line-height: 1.5;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        transform: translateX(-20px);
+        animation: aparecer 1.5s ease-out forwards;
+    &.izquierda {
+        margin-left: 0;
+        background-color: #f2c2e4;
+    }
+    &.derecha {
+        margin-left: auto;
+        background-color: #c2e9f8;
+    }
+    @include mobile {
+        @keyframes aparecer {
+        0% {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        }
+    }
+        }
+}
