@@ -336,13 +336,13 @@ p {
 /* Estilo para testimonios en la izquierda */
 .izquierda {
     margin-left: 0;
-    background-color: #FFF5EB;
+    background-color: #f2c2e4;
 }
 
 /* Estilo para testimonios en la derecha */
 .derecha {
     margin-left: auto;
-    background-color: #E8F6F3;
+    background-color: #c2e9f8;
 }
 
 /* Estilos generales para el formulario */
