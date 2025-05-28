@@ -460,7 +460,7 @@ section form .boton-adopcion {
     transform: scale(1);
   }
 }
-.carousel-inner img {
+.container .carousel-inner img {
   width: 100%;
   height: auto;
   object-fit: cover;

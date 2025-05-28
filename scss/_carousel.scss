@@ -1,10 +1,12 @@
-.carousel-inner {
-    img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        margin-top: 40px;
-        border-radius: 10px;
-        margin-bottom: 40px;
+.container{
+    .carousel-inner {
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-top: 40px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
     }
 }
