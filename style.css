@@ -396,15 +396,21 @@ section form button[type=submit]:hover {
   background-color: #c2e9f8;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  .testimonios-chat .chat-testimonio {
+    max-width: 100%;
+    padding: 12px 16px;
+    font-size: 0.8em;
+    line-height: 1.4;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .testimonios-chat {
+    padding: 15px 10px;
+    margin: 20px auto;
+  }
+  .testimonios-chat h2 {
+    font-size: 0.8em;
+    margin-bottom: 20px;
   }
 }
 
