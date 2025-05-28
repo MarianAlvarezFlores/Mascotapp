@@ -6,10 +6,10 @@ section {
     margin-top: 20px;
     form {
         label {
-        font-size: 1.2em;
-        color: #262626;
-        font-weight: bold;
-    }
+            font-size: 1.2em;
+            color: #262626;
+            font-weight: bold;
+        }
         input[type="text"],
         input[type="email"],
         textarea {
@@ -24,12 +24,12 @@ section {
             border-color: #F2A03D;
             box-shadow: 0 0 5px rgba(242, 160, 61, 0.5);
             outline: none;
-            }
-        }   
+        }
+    }
         textarea {
             resize: vertical;
         }
-    button[type="submit"] {
+        button[type="submit"] {
         background-color: #F2A03D;
         color: #fff;
         font-size: 1.2em;
@@ -42,7 +42,43 @@ section {
         &:hover {
             background-color: #BF500F;
             transform: scale(1.05);
-            }
         }
+    @include mobile {
+        section {
+            padding: 20px;
+            margin-top: 10px;
+            form {
+                label {
+                font-size: 0.9em;
+            }
+            form input[type="text"],
+            form input[type="email"],
+            form textarea {
+                    padding: 10px;
+                    font-size: 0.95em; 
+            }
+            form button[type="submit"] {
+                background-color: #F2A03D;
+                color: #fff;
+                font-size: 1em;
+                padding: 12px 30px;
+                border: none;
+                border-radius: 25px;
+                margin-top: 0px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+                }
+            .boton-adopcion {
+                    display: block;
+                    width: 80%; 
+                    margin: 10px auto; 
+                    padding: 12px 0; 
+                    font-size: 16px;
+                    text-align: center;
+                }
     }
+    }
+    }
+    } 
+}
 }
