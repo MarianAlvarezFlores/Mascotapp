@@ -1,26 +1,21 @@
 .text-container {
     width: 45%;
     margin: auto;
-  h2 {
+    h2 {
     text-align: center;
     padding-bottom: 16px;
-  }
-
-  p {
-    text-align: justify;
-  }
-
-  @include mobile {
-    width: 90%;
-    padding: 0 10px;
-
-    h2 {
-      font-size: 1.2em;
     }
-
     p {
-      font-size: 0.8em;
+    text-align: justify;
     }
-  }
+    @include mobile {
+        width: 90%;
+        padding: 0 10px;
+        h2 {
+            font-size: 1.2em;
+        }
+        p {
+        font-size: 0.8em;
+        }
+    }
 }
-
