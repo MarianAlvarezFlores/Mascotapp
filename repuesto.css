@@ -1,0 +1,717 @@
+/* Fuentes */
+@font-face {
+    font-family: "congreso_perros";
+    src: url(./font/congreso_perros.ttf) ;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url(./font/Montserrat-VariableFont_wght.ttf) ;
+}
+
+/* Header custom styles */
+header {
+    background-color: #F2F2F2;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del header */
+.header-container {
+    width: 100%;
+    padding: 15px;
+}
+
+.mi-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulo-header {
+    font-size: 50px;
+    font-family: "congreso_perros", sans-serif;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-img {
+    height: 150px;
+    width: 150px;
+}
+
+.mi-header h1 {
+    margin: 0;
+    font-family: "congreso_perros", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    flex: 1;
+}
+
+/* Icono (patita) en el botón */
+header .icon {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+
+/* Contenedor - botón de Secciones */
+header .dropdown {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+}
+
+/* Botón Secciones */
+header .btn-secciones {
+    background-color: #F2A03D;
+    color: #262626;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+header .btn-secciones:hover {
+    background-color: #BF500F;
+    color: #fff;
+}
+
+/* Dropdown personalizado */
+.dropdown-menu.show {
+    background-color: #F2F2F2;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #262626;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #F2A03D;
+    color: #fff;
+}
+
+/* Márgenes generales */
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "montserrat", serif;
+}
+
+/* Carousel */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+/* Párrafo al lado del carrusel */
+.text-container {
+    width: 45%;
+    margin: auto; 
+}
+
+.text-container h2 {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.text-container p {
+    text-align: justify;
+}
+
+.lista-requisitos {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    text-align: justify;
+}
+
+.lista-requisitos li {
+    padding: 8px 0 8px 32px;
+    border-bottom: 1px solid #ddd;
+    background-image: url("./media/corazon_rosa.png"); 
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+    background-size: 20px 20px;
+}
+
+.lista-requisitos li:last-child {
+    border-bottom: none;
+}
+
+/* Contenedor de tarjetas */
+.tarjetas-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Tarjetas de mascotas en adopción */
+.card-propia {
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-propia:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+}
+
+.container-propia {
+    padding: 16px;
+    text-align: center;
+}
+
+.nombre-mascota {
+    font-size: 24px;
+    color: #444;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.descripcion {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0 20px;
+}
+
+.boton-adopcion {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F2A03D;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-adopcion:hover {
+    background-color: #BF500F;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.boton-adopcion,
+.boton-adopcion:visited,
+.boton-adopcion:focus,
+.boton-adopcion:active {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+
+.requisitos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap; 
+}
+
+.text-container {
+    flex: 2;
+    min-width: 300px;
+}
+
+.photo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.perro-imagen {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #F2A03D;
+}
+
+/* Footer */
+footer {
+    background-color: #F2F2F2;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    width: 100%;
+}
+
+footer .text-center {
+    display: block; 
+}
+
+footer small {
+    color: #262626;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+footer .icon-footer {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    margin-top: 10px; 
+}
+
+/* Subtítulos y párrafos */
+h2 {
+    font-size: 1.6em;
+    margin-top: 40px;
+    font-weight: 600;
+    color: #262626;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Animación testimonios */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+.testimonios-chat {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.testimonios-chat h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.chat-testimonio {
+    max-width: 80%;
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    opacity: 0;  
+    transform: translateX(-20px); 
+    animation: aparecer 1.5s ease-out forwards; 
+}
+
+/* Estilo para testimonios en la izquierda */
+.izquierda {
+    margin-left: 0;
+    background-color: #f2c2e4;
+}
+
+/* Estilo para testimonios en la derecha */
+.derecha {
+    margin-left: auto;
+    background-color: #c2e9f8;
+}
+
+/* Estilos generales para el formulario */
+section {
+    padding: 30px;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estilos para los campos del formulario */
+form label {
+    font-size: 1.2em;
+    color: #262626;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #444;
+}
+
+form textarea {
+    resize: vertical;
+}
+/* Bordes y sombras al enfocarse */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #F2A03D;
+    box-shadow: 0 0 5px rgba(242, 160, 61, 0.5);
+    outline: none;
+}
+
+/* Botón de enviar */
+form button[type="submit"] {
+    background-color: #F2A03D;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #BF500F;
+    transform: scale(1.05);
+}
+
+/* Estilos adaptados de la Toast de Boostrap */
+.custom-toast {
+    background-color: #F2F2F2;
+    font-family: "montserrat", sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-toast .toast-header {
+    background-color: #ffcfec;
+    color: rgb(72, 71, 71);
+    font-weight: bold;
+}
+
+.custom-toast .toast-body {
+    color: #262626;
+}
+
+.custom-toast .close {
+    color: #fff;
+    font-size: 1.5em;
+    opacity: 0.7;
+}
+.custom-toast .close:hover {
+    opacity: 1;
+}
+
+/* Animación toast*/
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Adaptaciones celular entre 375 y 767*/
+
+@media (min-width: 375px) and (max-width: 767px) {
+
+    .text-container p{
+        margin-right: 10px;
+    }
+    .text-container h2 {
+        margin-right: 10px;
+    }
+
+    }
+
+/* Contenedor del header */
+.header-container {
+    width: 100%;
+    padding: 15px;
+    height: 150px;
+}
+.logo-img {
+        height: 100px;
+        width: 100px;
+        margin-bottom: -25px;
+        margin-top: -35px;
+    }
+.titulo-header,
+    .mi-header h1 {
+        display: none;
+    }
+
+    /* Icono (patita) en el botón */
+header .icon {
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+}
+
+/* Contenedor - botón de Menu */
+header .dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Botón Secciones */
+header .btn-secciones {
+    background-color: #F2A03D;
+    color: #262626;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    border: none;
+    display: flex;
+    align-items: center;
+    z-index: 1; 
+}
+    header .icon {
+        height: 20px;
+        width: 20px;
+        margin-left: 6px;
+    }
+
+/* Dropdown personalizado */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F2F2F2;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    width: max-content;  
+    min-width: 120px;    
+    text-align: center;
+}
+.dropdown-menu.show {
+    display: block;
+}
+
+.lista-requisitos {
+        font-size: 0.9em;             
+        line-height: 1.4;
+        padding: 0 10px;   
+        margin-right: 10px;           
+    }
+
+.lista-requisitos li {
+        padding: 8px 0 8px 28px;      
+        background-position: 0 8px;   
+        background-size: 16px 16px;  
+        background-image: url("./media/corazon_rosa.png");  
+        margin-left: -15px;
+        margin-right: 15px;
+    }
+
+.lista-requisitos li:last-child {
+    border-bottom: none;
+}
+
+.photo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.perro-imagen {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #F2A03D;
+    margin-top: -15px;
+}
+    .testimonios-chat {
+        padding: 15px 10px;
+        margin: 20px auto;
+    }
+
+    .testimonios-chat h2 {
+        font-size: 0.8em;
+        margin-bottom: 20px;
+    }
+
+    .chat-testimonio {
+        max-width: 100%;
+        padding: 12px 16px;
+        font-size: 0.8em;
+        line-height: 1.4;
+    }
+
+    /* Animación testimonios */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+.card-propia {
+        width: 80%; 
+        max-width: 100%; 
+        margin: 20px auto; 
+        padding: 10px; 
+        margin-left: 10%;
+        margin-right: 0;
+    }
+
+.nombre-mascota {
+        font-size: 20px; 
+    }
+
+.descripcion {
+        font-size: 14px; 
+    }
+
+.boton-adopcion {
+        padding: 8px 15px; 
+        font-size: 14px; 
+    }
+
+/* Estilos generales para el formulario de las mascotas para adoptar*/
+section {
+    padding: 30px;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estilos para los campos del formulario */
+form label {
+    font-size: 1.2em;
+    color: #262626;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #444;
+}
+
+/*Formulario*/
+
+section {
+        padding: 20px;  
+        margin-top: 10px;   
+    }
+    form label {
+        font-size: 0.9em;
+    }
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+        padding: 10px;
+        font-size: 0.95em; 
+}
+
+/* Botón de enviar */
+form button[type="submit"] {
+    background-color: #F2A03D;
+    color: #fff;
+    font-size: 1em;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-adopcion {
+        display: block;
+        width: 80%; 
+        margin: 10px auto; 
+        padding: 12px 0; 
+        font-size: 16px;
+        text-align: center;
+    }
+
+/* Párrafo al lado del carrusel adaptado a celular*/
+
+    .text-container {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .text-container h2 {
+        font-size: 1.2em;
+    }
+
+    .text-container p {
+        font-size: 0.8em;
+    }
+
+    .carousel-inner img {
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    footer {
+        padding: 15px 10px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    footer small {
+        font-size: 13px; 
+        line-height: 1.4;
+    }
+
+    footer .icon-footer {
+        width: 30px;
+        height: 30px;
+        margin-top: 8px;
+    }

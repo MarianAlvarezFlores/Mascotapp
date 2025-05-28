@@ -4,6 +4,11 @@ header {
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
+    .header-container {
+        width: 100%;
+        padding: 15px;
+    }
+
     .mi-header-inner {
         display: flex;
         justify-content: space-between;
@@ -12,107 +17,37 @@ header {
         flex-wrap: wrap;
 
         .logo-contenedor {
-        display: flex;
-        align-items: center;
-        gap: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
 
-        .logo-img {
-            height: 150px;
-            width: 150px;
-        }
+            .logo-img {
+                height: 150px;
+                width: 150px;
+            }
         }
 
         .titulo-header {
-        font-size: 50px;
-        font-family: "congreso_perros", sans-serif;
-        margin: 0;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+            font-size: 50px;
+            font-family: "congreso_perros", sans-serif;
+            margin: 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .mi-header {
-        h1 {
-            margin: 0;
-            font-family: "congreso_perros", sans-serif;
-            font-size: 50px;
-            text-align: center;
-            flex: 1;
-        }
+            h1 {
+                margin: 0;
+                font-family: "congreso_perros", sans-serif;
+                font-size: 50px;
+                text-align: center;
+                flex: 1;
+            }
         }
     }
 
     nav {
-        .btn-secciones {
-        background-color: #F2A03D;
-        color: #262626;
-        font-weight: bold;
-        border-radius: 5px;
-        padding: 8px 15px;
-        text-transform: uppercase;
-        border: none;
-        display: flex;
-        justify-content: center;
-
-        &:hover {
-            background-color: #BF500F;
-            color: #fff;
-        }
-        }
-
-        .dropdown {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        }
-
-        .dropdown-menu.show {
-        background-color: #F2F2F2;
-        }
-
-        .dropdown-menu {
-        .dropdown-item {
-            color: #262626;
-
-            &:hover {
-            background-color: #F2A03D;
-            color: #fff;
-            }
-        }
-        }
-
-        @include mobile {
-        .header-container {
-            width: 100%;
-            padding: 15px;
-            height: 150px;
-        }
-
-        .logo-img {
-            height: 100px;
-            width: 100px;
-            margin-bottom: -25px;
-            margin-top: -35px;
-        }
-
-        .titulo-header,
-        .mi-header h1 {
-            display: none;
-        }
-
-        .icon {
-            height: 25px;
-            width: 25px;
-            margin-left: 10px;
-        }
-
-        .dropdown {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
         .btn-secciones {
             background-color: #F2A03D;
             color: #262626;
@@ -122,34 +57,88 @@ header {
             text-transform: uppercase;
             border: none;
             display: flex;
+            justify-content: center;
             align-items: center;
             z-index: 1;
+
+            &:hover {
+                background-color: #BF500F;
+                color: #fff;
+            }
+
+            .icon {
+                height: 40px;
+                width: 40px;
+                margin-left: 10px;
+            }
         }
 
-        .icon {
-            height: 20px;
-            width: 20px;
-            margin-left: 6px;
+        .dropdown {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
         }
 
         .dropdown-menu {
+            background-color: #F2F2F2;
+
+            &.show {
+                display: block;
+            }
+
+            display: none;
             position: absolute;
             top: 100%;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #F2F2F2;
             margin-top: 5px;
             border-radius: 5px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            display: none;
             width: max-content;
             min-width: 120px;
             text-align: center;
-        }
 
-        .dropdown-menu.show {
-            display: block;
-        }
+            .dropdown-item {
+                color: #262626;
+
+                &:hover {
+                    background-color: #F2A03D;
+                    color: #fff;
+                }
+            }
         }
     }
+
+        @include mobile {
+            .header-container {
+                width: 100%;
+                padding: 15px;
+                height: 150px;
+
+            }
+            
+
+            .logo-img {
+                height: 100px;
+                width: 100px;
+                margin-bottom: -25px;
+                margin-top: -35px;
+            }
+
+            .titulo-header,
+                .mi-header h1 {
+                    display: none;
+                }
+            .btn-secciones {
+                padding: 8px 15px;
+
+                .icon {
+                    height: 20px;
+                    width: 20px;
+                    margin-left: 6px;
+                }
+            }
+        }
     }
+
