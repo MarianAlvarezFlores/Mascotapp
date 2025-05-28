@@ -6,30 +6,32 @@ section {
     margin-top: 20px;
     form {
         label {
-            font-size: 1.2em;
-            color: #262626;
-            font-weight: bold;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 12px;
-            margin-top: 8px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 1em;
-            color: #444;
+        font-size: 1.2em;
+        color: #262626;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 1em;
+        color: #444;
         &:focus {
             border-color: #F2A03D;
             box-shadow: 0 0 5px rgba(242, 160, 61, 0.5);
             outline: none;
         }
     }
-        textarea {
-            resize: vertical;
-        }
-        button[type="submit"] {
+    textarea {
+        resize: vertical;
+    }
+
+    button[type="submit"] {
         background-color: #F2A03D;
         color: #fff;
         font-size: 1.2em;
@@ -43,42 +45,39 @@ section {
             background-color: #BF500F;
             transform: scale(1.05);
         }
+    }
+
+    .boton-adopcion {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        padding: 12px 0;
+        font-size: 16px;
+        text-align: center;
+        }
+    }
+
     @include mobile {
-        section {
-            padding: 20px;
-            margin-top: 10px;
-            form {
-                label {
-                font-size: 0.9em;
-            }
-            form input[type="text"],
-            form input[type="email"],
-            form textarea {
-                    padding: 10px;
-                    font-size: 0.95em; 
-            }
-            form button[type="submit"] {
-                background-color: #F2A03D;
-                color: #fff;
-                font-size: 1em;
-                padding: 12px 30px;
-                border: none;
-                border-radius: 25px;
-                margin-top: 0px;
-                cursor: pointer;
-                transition: background-color 0.3s ease, transform 0.2s ease;
-                }
-            .boton-adopcion {
-                    display: block;
-                    width: 80%; 
-                    margin: 10px auto; 
-                    padding: 12px 0; 
-                    font-size: 16px;
-                    text-align: center;
-                }
+        padding: 20px;
+        margin-top: 10px;
+
+    form {
+        label {
+        font-size: 0.9em;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+        button[type="submit"] {
+            font-size: 1em;
+            margin-top: 0px;
+        }
     }
-    }
-    }
-    } 
+  }
 }
-}
+

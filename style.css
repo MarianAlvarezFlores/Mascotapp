@@ -338,38 +338,31 @@ section form button[type=submit]:hover {
   background-color: #BF500F;
   transform: scale(1.05);
 }
+section form .boton-adopcion {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 12px 0;
+  font-size: 16px;
+  text-align: center;
+}
 @media (min-width: 375px) and (max-width: 767px) {
-  section form button[type=submit] section {
+  section {
     padding: 20px;
     margin-top: 10px;
   }
-  section form button[type=submit] section form label {
+  section form label {
     font-size: 0.9em;
   }
-  section form button[type=submit] section form form input[type=text],
-  section form button[type=submit] section form form input[type=email],
-  section form button[type=submit] section form form textarea {
+  section form input[type=text],
+  section form input[type=email],
+  section form textarea {
     padding: 10px;
-    font-size: 0.95em;
+    font-size: 0.9em;
   }
-  section form button[type=submit] section form form button[type=submit] {
-    background-color: #F2A03D;
-    color: #fff;
+  section form button[type=submit] {
     font-size: 1em;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 25px;
     margin-top: 0px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  section form button[type=submit] section form .boton-adopcion {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 12px 0;
-    font-size: 16px;
-    text-align: center;
   }
 }
 
