@@ -110,13 +110,21 @@ header {
         }
     }
 
-        @include mobile {
-            .header-container {
-                width: 100%;
-                padding: 15px;
-                height: 150px;
-            }
-            
+    @include mobile {
+        .header-container {
+            width: 100%;
+            padding: 15px;
+            height: 150px;
+        }
+
+        .mi-header-inner {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo-contenedor {
+            justify-content: center;
 
             .logo-img {
                 height: 100px;
@@ -124,11 +132,21 @@ header {
                 margin-bottom: -25px;
                 margin-top: -35px;
             }
+        }
 
-            .titulo-header,
-                .mi-header h1 {
-                    display: none;
-                }
+        .titulo-header,
+        .mi-header h1 {
+            display: none;
+        }
+
+        nav {
+            .dropdown {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+            }
+
             .btn-secciones {
                 padding: 8px 15px;
 
@@ -139,5 +157,12 @@ header {
                 }
             }
         }
-    }
 
+        .text-container {
+            p,
+            h2 {
+                margin-right: 10px;
+            }
+        }
+    }
+}

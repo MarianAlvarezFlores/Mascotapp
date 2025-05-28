@@ -114,7 +114,15 @@ header nav .dropdown-menu .dropdown-item:hover {
     padding: 15px;
     height: 150px;
   }
-  header .logo-img {
+  header .mi-header-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header .logo-contenedor {
+    justify-content: center;
+  }
+  header .logo-contenedor .logo-img {
     height: 100px;
     width: 100px;
     margin-bottom: -25px;
@@ -124,13 +132,23 @@ header nav .dropdown-menu .dropdown-item:hover {
   header .mi-header h1 {
     display: none;
   }
-  header .btn-secciones {
+  header nav .dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  header nav .btn-secciones {
     padding: 8px 15px;
   }
-  header .btn-secciones .icon {
+  header nav .btn-secciones .icon {
     height: 20px;
     width: 20px;
     margin-left: 6px;
+  }
+  header .text-container p,
+  header .text-container h2 {
+    margin-right: 10px;
   }
 }
 
