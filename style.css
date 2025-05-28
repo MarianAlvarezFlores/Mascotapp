@@ -195,22 +195,22 @@ footer .icon-footer {
   width: 45%;
   margin: auto;
 }
-.text-container .text-container h2 {
+.text-container h2 {
   text-align: center;
   padding-bottom: 16px;
 }
-.text-container .text-container p {
+.text-container p {
   text-align: justify;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .text-container .text-container {
+  .text-container {
     width: 90%;
     padding: 0 10px;
   }
-  .text-container .text-container h2 {
+  .text-container h2 {
     font-size: 1.2em;
   }
-  .text-container .text-container p {
+  .text-container p {
     font-size: 0.8em;
   }
 }
