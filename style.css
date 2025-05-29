@@ -423,6 +423,7 @@ section form .boton-adopcion {
   .testimonios-chat h2 {
     font-size: 0.8em;
     margin-bottom: 20px;
+    font-weight: bold;
   }
 }
 
